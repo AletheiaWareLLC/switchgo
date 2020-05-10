@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>{{ .Name }} - Switch - Aletheia Ware</title>
+    </head>
+
+    <body>
+        <div class="content">
+            <div class="header">
+                <a href="https://aletheiaware.com">
+                    <img src="logo.svg" />
+                </a>
+            </div>
+
+            <h1>Switch</h1>
+
+            <form action="switch?state={{ .Next }}" method="POST">
+                {{if eq .State "on"}}
+                    <input type="image" src="/on.svg" alt="Switch" />
+                {{else}}
+                    <input type="image" src="/off.svg" alt="Switch" />
+                {{end}}
+                <br />
+                {{ .Name }}
+                <br />
+                {{ .Timestamp }}
+            </form>
+
+            <p>Switch is made available by <a href="https://aletheiaware.com">Aletheia Ware</a> under the <a href="https://aletheiaware.com/terms-of-service.html">Terms of Service</a> and <a href="https://aletheiaware.com/privacy-policy.html">Privacy Policy</a>.</p>
+
+            <p>Switch is an open-source project released under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a> and hosted on <a href="https://github.com/AletheiaWareLLC">Github</a>.</p>
+
+            <div class="footer">
+                <ul class="nav">
+                    <li><a href="mailto:support@aletheiaware.com">Support</a></li>
+                </ul>
+                <p>© 2019 Aletheia Ware LLC.  All rights reserved.</p>
+            </div>
+        </div>
+    </body>
+</html>

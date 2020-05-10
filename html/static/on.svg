@@ -1,0 +1,21 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="89" height="144">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+        <g stroke="grey">
+            <!-- Panel -->
+            <rect rx="8" x="1" y="1" width="87" height="142" />
+            <!-- Top Screw -->
+            <circle cx="44.5" cy="10" r="5" />
+            <path d="M44.5,5 L44.5,15" />
+            <!-- Bottom Screw -->
+            <circle cx="44.5" cy="134" r="5" />
+            <path d="M44.5,129 L44.5,139" />
+            <!-- Rim -->
+            <rect rx="3" x="33" y="54" width="21" height="34" />
+            <!-- State -->
+            <rect fill="green" rx="2" x="35" y="56" width="17" height="30" />
+            <!-- Lever -->
+            <rect fill="white" rx="1" x="35" y="41" width="17" height="30" />
+        </g>
+    </g>
+</svg>
